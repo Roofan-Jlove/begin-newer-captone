@@ -37,6 +37,8 @@ const SimilarProducts: React.FC = () => {
             <Image
               src={product.image}
               alt={product.title}
+              width={48}
+                height={48}
               className="w-full h-60 object-cover"
             />
             <div className="p-4">

@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import { Input } from '@/components/ui/input';
 import Image from "next/image"
-// import Hero from '@/components/HeroSection/Hero';
 import Header2 from '@/components/Header2';
 import Link from 'next/link';
 
@@ -65,9 +64,6 @@ const ShoppingCart: React.FC = () => {
 
 
 
-      {/* <header className="bg-cover bg-center h-48 flex items-center justify-center" style={{ backgroundImage: 'url(/path/to/header-bg.jpg)' }}>
-        <h1 className="text-5xl font-bold text-white tracking-wide">Shopping Cart</h1>
-      </header> */}
       
       <main className="py-12 px-6 md:px-16 lg:px-28">
         <table className="w-full border-collapse">

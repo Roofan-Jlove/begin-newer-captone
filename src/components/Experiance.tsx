@@ -15,59 +15,8 @@ export default function Experience() {
             (
               item: {
                 src: string | StaticImport;
-                label:
-                  | string
-                  | number
-                  | bigint
-                  | boolean
-                  | React.ReactElement<
-                      unknown,
-                      string | React.JSXElementConstructor<any>
-                    >
-                  | Iterable<React.ReactNode>
-                  | Promise<
-                      | string
-                      | number
-                      | bigint
-                      | boolean
-                      | React.ReactPortal
-                      | React.ReactElement<
-                          unknown,
-                          string | React.JSXElementConstructor<any>
-                        >
-                      | Iterable<React.ReactNode>
-                      | null
-                      | undefined
-                    >
-                  | null
-                  | undefined;
-                value:
-                  | string
-                  | number
-                  | bigint
-                  | boolean
-                  | React.ReactElement<
-                      unknown,
-                      string | React.JSXElementConstructor<any>
-                    >
-                  | Iterable<React.ReactNode>
-                  | React.ReactPortal
-                  | Promise<
-                      | string
-                      | number
-                      | bigint
-                      | boolean
-                      | React.ReactPortal
-                      | React.ReactElement<
-                          unknown,
-                          string | React.JSXElementConstructor<any>
-                        >
-                      | Iterable<React.ReactNode>
-                      | null
-                      | undefined
-                    >
-                  | null
-                  | undefined;
+                label: string; // Ensure it's a string.
+                value: string | number; // Define as value-renderable types.
               },
               index: React.Key | null | undefined
             ) => (
@@ -78,7 +27,11 @@ export default function Experience() {
                 <div>
                   <Image
                     src={item.src}
-                    alt={item.label} // Descriptive alt text based on item
+                    alt={
+                      typeof item.label === "string"
+                        ? item.label
+                        : "Experience image" // Fallback if label isn't a string
+                    }
                     width={120}
                     height={120}
                     className="mb-6 sm:mb-8 lg:mb-10"

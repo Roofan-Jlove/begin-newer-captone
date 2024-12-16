@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { IoPlayOutline } from "react-icons/io5";
-// import Hero from "./Hero";
-// import Miniver from "Google/Miniver"
 
 export default function Aboutus() {
   return (

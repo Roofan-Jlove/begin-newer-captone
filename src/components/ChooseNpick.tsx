@@ -113,15 +113,19 @@ export default function ChooseNpick() {
             <Image
               src="/homeimg/bg-chosepic1.png"
               alt="Menu Highlight"
+              width={48}
+                height={48}
               className="w-[366px] rounded-lg shadow-lg "
             />
           </div>
           <div className="w-[800px] md:col-span-1 grid grid-cols-2 gap-4">
             {filteredItems.map((item, index) => (
               <div key={index} className="flex space-x-4">
-                <img
+                <Image
                   src={item.image}
                   alt={item.name}
+                  width={25}
+                height={25}
                   className="w-20 h-20 rounded-lg object-cover"
                 />
                 <div className="">

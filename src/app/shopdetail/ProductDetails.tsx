@@ -21,6 +21,8 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           <Image
             src={product.images[0]}
             alt={product.title}
+            width={150}
+                height={150}
             className="w-full rounded-lg shadow-md mb-4"
           />
           <div className="grid grid-cols-4 gap-2">
@@ -29,6 +31,8 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
                 key={index}
                 src={img}
                 alt={`Thumbnail ${index + 1}`}
+                width={150}
+                height={150}
                 className="rounded-lg shadow-sm cursor-pointer hover:opacity-75"
               />
             ))}

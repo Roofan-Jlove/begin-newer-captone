@@ -19,6 +19,8 @@ export default function Food() {
               <Image
                 src="/homeimg/food-item-1.png"
                 alt="Food Item 1"
+                width={48}
+                height={48}
                 className="rounded-lg object-cover h-48 w-full"
               />
               <span className="absolute top-2 left-2 bg-[#FF9F0D] text-black px-2 py-1 text-sm rounded">
@@ -31,16 +33,22 @@ export default function Food() {
             <Image
               src="/homeimg/food-item-2.png"
               alt="Food Item 2"
+              width={48}
+                height={48}
               className="rounded-lg object-cover h-48 w-full"
             />
             <Image
               src="/homeimg/food-item-3.png"
               alt="Food Item 3"
+              width={48}
+                height={48}
               className="rounded-lg object-cover h-48 w-full"
             />
             <Image
               src="/homeimg/food-item-4.png"
               alt="Food Item 4"
+              width={48}
+                height={48}
               className="rounded-lg object-cover h-48 w-full"
             />
           </div>
