@@ -5,7 +5,7 @@ import FoodyProduct from "@/components/FoodyProduct";
 import Header from "@/components/Header";
 import LandingHero from "@/components/LandingHero";
 import MeetChef from "@/components/MeetChef";
-import Image from "next/image";
+
 
 export default function Home() {
   return (

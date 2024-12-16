@@ -1,6 +1,7 @@
 import Header2 from "@/components/Header2";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -14,9 +15,9 @@ const page = () => {
       >
         <h1 className="text-white text-3xl font-bold">Check Out Page</h1>
         <p className="text-white mt-2">
-          <a href="/" className="text-gray-300 hover:underline">
+          <Link href="/" className="text-gray-300 hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="text-orange-500"> › </span>{" "}
           <span className="text-orange-500">Check Out</span>
         </p>
@@ -54,10 +55,8 @@ const page = () => {
             />{" "}
             <select className="border p-2 col-span-2">
               {" "}
-              <option>
-                Choose country
-              </option>              
-               {/* Add country options here */}{" "}
+              <option>Choose country</option>
+              {/* Add country options here */}{" "}
             </select>{" "}
             <input
               type="text"
@@ -87,8 +86,7 @@ const page = () => {
             <div className="col-span-2 flex justify-between">
               {" "}
               <button type="button" className="bg-orange-500 text-white p-2">
-                <Link href="/ShopingCart">
-                Back to cart</Link>
+                <Link href="/ShopingCart">Back to cart</Link>
               </button>{" "}
               <button type="submit" className="bg-orange-500 text-white p-2">
                 Proceed to shipping
@@ -104,7 +102,7 @@ const page = () => {
             {[1, 2, 3].map((item, index) => (
               <div key={index} className="flex items-center">
                 {" "}
-                <img
+                <Image
                   src="/chkout.png"
                   alt="Chicken Tikka Kabab"
                   className="w-16 h-16 mr-4"

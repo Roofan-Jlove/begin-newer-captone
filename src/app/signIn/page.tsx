@@ -1,5 +1,6 @@
 import Header2 from "@/components/Header2";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SignIn() {
   return (
@@ -13,9 +14,9 @@ export default function SignIn() {
       >
         <h1 className="text-white text-3xl font-bold">Sign In here</h1>
         <p className="text-white mt-2">
-          <a href="/" className="text-gray-300 hover:underline">
+          <Link href="/" className="text-gray-300 hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="text-orange-500">›</span>{" "}
           <span className="text-orange-500">Sign In</span>
         </p>
@@ -73,7 +74,10 @@ export default function SignIn() {
           </form>
           <div className="text-center my-4">
             <p className="text-gray-600">Don't have an account?</p>
-            <Link href="/signUp" className="text-2xl font-medium text-orange-500 hover:underline">
+            <Link
+              href="/signUp"
+              className="text-2xl font-medium text-orange-500 hover:underline"
+            >
               Sign up here
             </Link>
           </div>
@@ -83,11 +87,11 @@ export default function SignIn() {
             <hr className="flex-grow border-gray-300" />
           </div>
           <button className="flex items-center justify-center w-full border py-2 rounded-lg hover:bg-gray-50">
-            <img src="/Google.png" alt="Google" className="w-5 h-5 mr-2" />
+            <Image src="/Google.png" alt="Google" className="w-5 h-5 mr-2" />
             Sign in with Google
           </button>
           <button className="flex items-center justify-center w-full border py-2 rounded-lg hover:bg-gray-50 mt-2">
-            <img src="/Apple.png" alt="Apple" className="w-5 h-5 mr-2" />
+            <Image src="/Apple.png" alt="Apple" className="w-5 h-5 mr-2" />
             Sign in with Apple
           </button>
         </div>

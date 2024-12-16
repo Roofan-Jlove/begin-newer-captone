@@ -1,6 +1,6 @@
 import Link from "next/link";
 import BotFooter from "./BotFooter";
-import NewsletterSection from "./ewsletterSection";
+import NewsletterSection from "./NewsletterSection";
 import { Clock } from "lucide-react";
 import Image from "next/image";
 

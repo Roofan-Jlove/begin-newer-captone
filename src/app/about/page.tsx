@@ -2,6 +2,7 @@ import Header2 from '@/components/Header2'
 import React from 'react'
 import AboutUs from './AboutUs'
 import Team from './Team'
+import { Link } from 'lucide-react'
 
 const page = () => {
   return (
@@ -16,9 +17,9 @@ const page = () => {
       >
         <h1 className="text-white text-3xl font-bold">About Us</h1>
         <p className="text-white mt-2">
-          <a href="/" className="text-gray-300 hover:underline">
+          <Link href="/" className="text-gray-300 hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="text-orange-500"> › </span>{" "}
           <span className="text-orange-500">About Us</span>
         </p>

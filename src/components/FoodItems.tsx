@@ -1,4 +1,4 @@
-import { Import } from "lucide-react";
+
 import Image from "next/image";
 // components/ChooseFoodItemSection.js
 export default function Food() {
@@ -16,7 +16,7 @@ export default function Food() {
           {/* Food Item Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             <div className="relative">
-              <img
+              <Image
                 src="/homeimg/food-item-1.png"
                 alt="Food Item 1"
                 className="rounded-lg object-cover h-48 w-full"
@@ -28,17 +28,17 @@ export default function Food() {
                 Fast Food Dish
               </p>
             </div>
-            <img
+            <Image
               src="/homeimg/food-item-2.png"
               alt="Food Item 2"
               className="rounded-lg object-cover h-48 w-full"
             />
-            <img
+            <Image
               src="/homeimg/food-item-3.png"
               alt="Food Item 3"
               className="rounded-lg object-cover h-48 w-full"
             />
-            <img
+            <Image
               src="/homeimg/food-item-4.png"
               alt="Food Item 4"
               className="rounded-lg object-cover h-48 w-full"

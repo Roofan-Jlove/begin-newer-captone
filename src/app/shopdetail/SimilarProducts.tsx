@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Product {
   title: string;
@@ -33,7 +34,7 @@ const SimilarProducts: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {similarProducts.map((product, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img
+            <Image
               src={product.image}
               alt={product.title}
               className="w-full h-60 object-cover"

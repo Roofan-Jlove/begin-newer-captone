@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ProductDetailsProps {
   product: {
@@ -17,14 +18,14 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Product Images */}
         <div>
-          <img
+          <Image
             src={product.images[0]}
             alt={product.title}
             className="w-full rounded-lg shadow-md mb-4"
           />
           <div className="grid grid-cols-4 gap-2">
             {product.images.slice(1).map((img, index) => (
-              <img
+              <Image
                 key={index}
                 src={img}
                 alt={`Thumbnail ${index + 1}`}

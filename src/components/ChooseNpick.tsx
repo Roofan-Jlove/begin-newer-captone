@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 
 import { useState } from "react";
 
@@ -109,7 +110,7 @@ export default function ChooseNpick() {
         {/* Menu Items */}
         <div className="w-[1169px] grid grid-cols-1 md:grid-cols-3 gap-8 justify-center ">
           <div className="md:col-span-1">
-            <img
+            <Image
               src="/homeimg/bg-chosepic1.png"
               alt="Menu Highlight"
               className="w-[366px] rounded-lg shadow-lg "
