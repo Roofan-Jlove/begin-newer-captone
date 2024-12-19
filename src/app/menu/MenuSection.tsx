@@ -43,7 +43,7 @@ const MenuSection = () => {
            ></Image>
           {/* Starter Menu Section */}
             <section className="py-8">
-            <img src="/CoffeeOnge.png" alt="" width={24} height={24} />
+            <Image src="/CoffeeOnge.png" alt="" width={24} height={24} />
              <h2 className="text-2xl font-bold mb-6">Starter Menu</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8 justify-center items-end">
             {starterMenu.map((item, index) => (
@@ -67,7 +67,7 @@ const MenuSection = () => {
         {/* Main Course Section */}
         
         <section className="py-8">
-          <img src="/CoffeeOnge.png" alt="" width={24} height={24} />
+          <Image src="/CoffeeOnge.png" alt="" width={24} height={24} />
           <h2 className="text-2xl font-bold mb-6">Main Course</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             {mainCourse.map((item, index) => (

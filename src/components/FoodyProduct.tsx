@@ -1,4 +1,6 @@
 // components/AboutUsSection.js
+import Image from "next/image";
+
 
 export default function FoodyProduct() {
     return (
@@ -35,22 +37,22 @@ export default function FoodyProduct() {
   
           {/* Right Content */}
           <div className="grid grid-cols-2 gap-4">
-            <img
+            <Image
               src="/homeimg/large-food.png"
               alt="Delicious food"
               className="col-span-2 rounded-lg object-cover h-64 w-full"
             />
-            <img
+            <Image
               src="/homeimg/food-1.png"
               alt="Food 1"
               className="rounded-lg object-cover h-32 w-full"
             />
-            <img
+            <Image
               src="/homeimg/food-2.png"
               alt="Food 2"
               className="rounded-lg object-cover h-32 w-full"
             />
-            {/* <img
+            {/* <Image
               src="/images/food-3.jpg"
               alt="Food 3"
               className="rounded-lg object-cover h-32 w-full"

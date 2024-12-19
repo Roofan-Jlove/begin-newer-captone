@@ -60,7 +60,7 @@ const FAQPage: React.FC = () => {
               Home
             </Link>{" "}
             <span className="text-orange-500">›</span>{" "}
-            <span className="text-orange-500">FAQ's</span>
+            <span className="text-orange-500">FAQ&apos;s</span>
           </p>
         </div>
       </div>

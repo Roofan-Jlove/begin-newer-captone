@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface Chef {
@@ -53,7 +54,7 @@ const MeetChef: React.FC = () => {
               key={index}
               className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
             >
-              <img
+              <Image
                 src={chef.image}
                 alt={chef.name}
                 className="w-full h-72 object-cover"
@@ -89,7 +90,7 @@ const MeetChef: React.FC = () => {
           <div className="relative bg-white text-black p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
             {/* Client Image */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-              <img
+              <Image
                 src="/homeimg/client0.png"
                 alt="Client"
                 className="w-16 h-16 rounded-full border-4 border-white shadow-lg"
@@ -97,8 +98,8 @@ const MeetChef: React.FC = () => {
             </div>
             <div className="pt-8">
               <p className="text-gray-600 mb-4">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque diam pellentesque bibendum non volutpat purus scelerisque."
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Quisque diam pellentesque bibendum non volutpat purus scelerisque.
               </p>
               {/* Stars */}
               <div className="flex justify-center mb-2 text-[#FF9F0D]">

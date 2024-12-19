@@ -33,7 +33,7 @@ const page = () => {
             Oops! Look likes something going wrong
           </h2>
           <p className="text-gray-500 mb-6">
-            Page cannot be found! We'll fix it as soon as we can. Meanwhile,
+            Page cannot be found! We&apos;ll fix it as soon as we can. Meanwhile,
             check out these fresh ideas.
           </p>
           <Link

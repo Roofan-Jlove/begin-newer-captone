@@ -73,7 +73,7 @@ export default function SignIn() {
             </button>
           </form>
           <div className="text-center my-4">
-            <p className="text-gray-600">Don't have an account?</p>
+            <p className="text-gray-600">Don&apos;t have an account?</p>
             <Link
               href="/signUp"
               className="text-2xl font-medium text-orange-500 hover:underline"
