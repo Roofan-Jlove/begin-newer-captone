@@ -57,6 +57,8 @@ const MeetChef: React.FC = () => {
               <Image
                 src={chef.image}
                 alt={chef.name}
+                width={32}
+              height={32}
                 className="w-full h-72 object-cover"
               />
               <div className="p-4 text-center">
@@ -93,6 +95,8 @@ const MeetChef: React.FC = () => {
               <Image
                 src="/homeimg/client0.png"
                 alt="Client"
+                width={32}
+              height={32}
                 className="w-16 h-16 rounded-full border-4 border-white shadow-lg"
               />
             </div>

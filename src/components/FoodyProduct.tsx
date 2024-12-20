@@ -40,16 +40,22 @@ export default function FoodyProduct() {
             <Image
               src="/homeimg/large-food.png"
               alt="Delicious food"
+              width={64}
+              height={64}
               className="col-span-2 rounded-lg object-cover h-64 w-full"
             />
             <Image
               src="/homeimg/food-1.png"
               alt="Food 1"
+              width={32}
+              height={32}
               className="rounded-lg object-cover h-32 w-full"
             />
             <Image
               src="/homeimg/food-2.png"
               alt="Food 2"
+              width={32}
+              height={32}
               className="rounded-lg object-cover h-32 w-full"
             />
             {/* <Image

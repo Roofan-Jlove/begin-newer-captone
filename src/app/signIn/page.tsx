@@ -87,11 +87,11 @@ export default function SignIn() {
             <hr className="flex-grow border-gray-300" />
           </div>
           <button className="flex items-center justify-center w-full border py-2 rounded-lg hover:bg-gray-50">
-            <Image src="/Google.png" alt="Google" className="w-5 h-5 mr-2" />
+            <Image src="/Google.png" alt="Google" width={32} height={32} className="w-5 h-5 mr-2" />
             Sign in with Google
           </button>
           <button className="flex items-center justify-center w-full border py-2 rounded-lg hover:bg-gray-50 mt-2">
-            <Image src="/Apple.png" alt="Apple" className="w-5 h-5 mr-2" />
+            <Image src="/Apple.png" alt="Apple" width={32} height={32} className="w-5 h-5 mr-2" />
             Sign in with Apple
           </button>
         </div>
