@@ -7,7 +7,7 @@ export default function NewsletterSection() {
             <span className="text-[#FF9F0D]">Still</span> You Need Our Support?
           </h2>
           <p className="text-sm sm:text-base mb-6">
-            Don&apos;t wait, make a smart & logical quote here. It's pretty easy.
+            Don&apos;t wait, make a smart & logical quote here. I&apos;s pretty easy.
           </p>
         </div>
 

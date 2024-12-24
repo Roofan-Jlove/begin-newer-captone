@@ -10,10 +10,8 @@ import MeetChef from "@/components/MeetChef";
 export default function Home() {
   return (
     <main>
-      <Header />
-      
-      <LandingHero />
-      
+      <Header />      
+      <LandingHero />      
       <FoodyProduct />
       <FoodItems />
       <Experience />
