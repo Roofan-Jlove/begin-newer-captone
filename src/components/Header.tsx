@@ -74,7 +74,7 @@ export default function Header() {
         <Sheet>
           <SheetTrigger asChild>
             <button className="lg:hidden text-white">
-              <Image src="/homeimg/hamburger.png" alt="menu" width={32} height={32} />
+              <Image src="/homeimg/Hamburger.png" alt="menu" width={32} height={32} />
             </button>
           </SheetTrigger>
           <SheetContent>
