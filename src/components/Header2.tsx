@@ -1,12 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
 
-export default function Header() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+export default function Header2() {
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "Menu", href: "/menu" },
@@ -19,15 +17,18 @@ export default function Header() {
 
   return (
     <header className="w-full bg-[#0D0D0D] fixed top-0 px-5 sm:px-6 lg:px-16 py-2 z-50">
-      <nav className="flex items-center justify-between">
-        {/* Logo */}
+      
+   
+      {/* Navigation Links and Icons */}
+      <nav className="flex flex-col lg:flex-row items-center justify-between">
+        {/* Logo on Top Line */}
+   
         <Link
           href="/"
           className="text-[24px] sm:text-[24px] leading-[32px] font-bold text-white font-helvetica"
         >
           Food<span className="text-[#FF9F0D]">tuck</span>
         </Link>
-
         {/* Desktop Navigation Links */}
         <ul className="hidden lg:flex items-center gap-8">
           {menuItems.map((item) => (
@@ -42,8 +43,9 @@ export default function Header() {
           ))}
         </ul>
 
-        {/* Desktop Icons */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* Search and Icons */}
+        <div className="hidden lg:flex items-center gap-4 mt-2 lg:mt-0">
+          {/* Search Box */}
           <div className="relative w-64">
             <input
               type="text"
@@ -58,9 +60,11 @@ export default function Header() {
               className="absolute right-3 top-3"
             />
           </div>
+          {/* User Icon */}
           <Link href="/signIn" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
           </Link>
+          {/* Shopping Cart Icon */}
           <Link href="/ShopingCart" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/homeimg/tote.png" alt="cart" width={24} height={24} />
           </Link>
@@ -81,7 +85,6 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     className="text-[18px] text-white font-medium hover:text-[#FF9F0D] transition-colors"
-                    onClick={() => setMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -91,14 +94,12 @@ export default function Header() {
                 <Link
                   href="/signIn"
                   className="text-white hover:text-[#FF9F0D] transition-colors"
-                  onClick={() => setMenuOpen(false)}
                 >
                   <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
                 </Link>
                 <Link
                   href="/ShopingCart"
                   className="text-white hover:text-[#FF9F0D] transition-colors"
-                  onClick={() => setMenuOpen(false)}
                 >
                   <Image src="/homeimg/tote.png" alt="cart" width={24} height={24} />
                 </Link>

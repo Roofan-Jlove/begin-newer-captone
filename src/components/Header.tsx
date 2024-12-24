@@ -1,6 +1,5 @@
 'use client';
 
-import React, { useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
