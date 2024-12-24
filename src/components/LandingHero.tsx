@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <section className=" mt-[96] bg-black px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
+    <section className=" mt-[80] bg-black px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
       {/* Heading */}
       <div className="text-white w-full md:w-[50%]">
         <h1 className="text-[20px] md:text-[28px] lg:text-[32px] font-normal text-[#FF9F0D] whitespace-nowrap text-center md:text-left" style={{ fontFamily: "'Miniver', cursive" }}>

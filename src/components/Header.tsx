@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
+import { FaBars } from "react-icons/fa";
 
 export default function Header() {
   const menuItems = [
@@ -74,7 +75,7 @@ export default function Header() {
         <Sheet>
           <SheetTrigger asChild>
             <button className="lg:hidden text-white">
-              <Image src="/homeimg/Hamburger.png" alt="menu" width={32} height={32} />
+            <FaBars />
             </button>
           </SheetTrigger>
           <SheetContent>
