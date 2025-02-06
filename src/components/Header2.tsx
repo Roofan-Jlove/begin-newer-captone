@@ -13,6 +13,7 @@ export default function Header2() {
     { name: "Pages", href: "/shopdetail" },
     { name: "About", href: "/about" },
     { name: "Shop", href: "/ourshop" },
+    { name: "Our Chef", href: "/chefs" },
     { name: "Contact", href: "/pager" },
   ];
 
@@ -66,7 +67,7 @@ export default function Header2() {
             <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
           </Link>
           {/* Shopping Cart Icon */}
-          <Link href="/ShopingCart" className="text-white hover:text-[#FF9F0D] transition-colors">
+          <Link href="/Cart" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/homeimg/tote.png" alt="cart" width={24} height={24} />
           </Link>
         </div>
@@ -92,14 +93,14 @@ export default function Header2() {
                 ))}
               </div>
               <div className="mt-6 flex gap-4">
-                <Link
+                {/* <Link
                   href="/signIn"
                   className="text-white hover:text-[#FF9F0D] transition-colors"
                 >
                   <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
-                </Link>
+                </Link> */}
                 <Link
-                  href="/ShopingCart"
+                  href="/cart"
                   className="text-white hover:text-[#FF9F0D] transition-colors"
                 >
                   <Image src="/homeimg/tote.png" alt="cart" width={24} height={24} />

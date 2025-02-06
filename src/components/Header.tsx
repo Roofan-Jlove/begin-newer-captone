@@ -13,11 +13,12 @@ export default function Header() {
     { name: "Pages", href: "/shopdetail" },
     { name: "About", href: "/about" },
     { name: "Shop", href: "/ourshop" },
+    { name: "Our Chef", href: "/chefs" },
     { name: "Contact", href: "/pager" },
   ];
 
   return (
-    <header className="w-full bg-[#0D0D0D] fixed top-0 px-5 sm:px-6 lg:px-16 py-2 z-50">
+    <header className="w-full bg-[#0D0D0D] fixed top-0 px-5 sm:px-6 lg:px-16 py-1 z-25">
       {/* Logo on Top Line */}
       <div className="flex justify-center py-2">
         <Link
@@ -62,11 +63,13 @@ export default function Header() {
             />
           </div>
           {/* User Icon */}
+
           <Link href="/signIn" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
           </Link>
+          
           {/* Shopping Cart Icon */}
-          <Link href="/ShopingCart" className="text-white hover:text-[#FF9F0D] transition-colors">
+          <Link href="/Cart" className="text-white hover:text-[#FF9F0D] transition-colors">
             <Image src="/homeimg/tote.png" alt="cart" width={24} height={24} />
           </Link>
         </div>
@@ -99,7 +102,7 @@ export default function Header() {
                   <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
                 </Link>
                 <Link
-                  href="/ShopingCart"
+                  href="/cart"
                   className="text-white hover:text-[#FF9F0D] transition-colors"
                 >
                   <Image src="/homeimg/tote.png" alt="cart" width={24} height={24} />

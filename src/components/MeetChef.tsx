@@ -97,7 +97,7 @@ const MeetChef: React.FC = () => {
                 alt="Client"
                 width={32}
               height={32}
-                className="w-16 h-16 rounded-full border-4 border-white shadow-lg"
+                className="w-32 h-32 rounded-full border-4 border-white shadow-lg"
               />
             </div>
             <div className="pt-8">
