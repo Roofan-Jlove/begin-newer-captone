@@ -57,14 +57,17 @@ const CartPage: React.FC = () => {
                 price={item.price}
                 quantity={item.quantity}
                 image={item.image}  // Pass image prop here
+                onIncrement={() => handleIncrement(item.id)}  // Use the handlers
+                onDecrement={() => handleDecrement(item.id)}  // Use the handlers
+                onRemove={() => handleRemove(item.id)}  // Use the handlers
               />
             ))}
             <div className="flex justify-between items-center mt-8">
               <h2 className="text-xl font-bold">Total Cost: ${totalCost.toFixed(2)}</h2>
               <Link href='/checkOut'>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                Checkout
-              </button>
+                <button className="bg-blue-500 text-white px-4 py-2 rounded">
+                  Checkout
+                </button>
               </Link>
             </div>
           </div>

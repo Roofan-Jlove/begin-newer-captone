@@ -1,5 +1,3 @@
-import { Import } from "lucide-react";
-import { fromJSON } from "postcss";
 import React from "react";
 import Image from "next/image";
 
@@ -12,6 +10,7 @@ interface ProductCardProps {
   rating: number;
   reviews: number;
 }
+
 const ProductCard: React.FC<ProductCardProps> = ({
   image,
   name,
@@ -49,9 +48,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </div>
         </div>
       </div>
-      {/* Rigih Side 1/4 width  */}
-      
+      {/* Right Side 1/4 width */}
     </main>
   );
 };
+
 export default ProductCard;
