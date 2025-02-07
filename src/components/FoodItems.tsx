@@ -63,7 +63,7 @@ export default function Food() {
           <div className="container mx-auto flex flex-wrap lg:flex-nowrap gap-1">
             {/* Left: Image Grid */}
                         
-            <div className="sec4 px-[20px] py-[60px] sm:px-[60px] py-[50px] text-white max-w-[1320px] lg:h-[800px] mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-0 gap-[30px]">
+            <div className="sec4 px-[20px] py-[60px] sm:px-[60px] text-white max-w-[1320px] lg:h-[800px] mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-0 gap-[30px]">
               <div className="lg:w-[50%] flex flex-wrap gap-[20px] justify-center">
                 <div className="flex gap-[20px] items-end flex-col sm:flex-row">
                   <div className="sm:max-w-[360px] h-[360px]">

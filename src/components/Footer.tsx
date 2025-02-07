@@ -12,8 +12,6 @@ const Footer = () => {
 
       <NewsletterSection />
 
-      {/* <hr className="text-orange-400 w-[1180px] justify-center items-start" /> */}
-
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* About Section */}
         <div className="w-[300px]">
@@ -155,8 +153,9 @@ const Footer = () => {
               height={70}
             ></Image>
             <div>
-              <p className="text-sm text-orange-400">Is fast food good is for
-              your body & health?</p>
+              <p className="text-sm text-orange-400">
+                Is fast food good is for your body & health?
+              </p>
               <p className="text-gray-400 text-sm ">February 28,2022</p>
             </div>
           </div>
@@ -168,8 +167,9 @@ const Footer = () => {
               height={70}
             ></Image>
             <div>
-              <p className="text-sm text-orange-400">Change your food habit
-              With organic food</p>
+              <p className="text-sm text-orange-400">
+                Change your food habit With organic food
+              </p>
               <p className="text-gray-400 text-sm">February 28,2022</p>
             </div>
           </div>
@@ -181,9 +181,9 @@ const Footer = () => {
               height={70}
             ></Image>
             <div>
-              <p className="text-sm text-orange-400">Do you like fastfood for
-your life?
-</p>
+              <p className="text-sm text-orange-400">
+                Do you like fastfood for your life?
+              </p>
               <p className="text-gray-400 text-sm">February 28,2022</p>
             </div>
           </div>

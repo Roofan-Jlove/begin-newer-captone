@@ -1,11 +1,11 @@
 "use client";
 
-import ShippingAddressForm from "@/components/ShippingAddressForm";
-import OrderSummary from "@/components/OrderSummary";
+import ShippingAddressForm from "../../components/ShippingAddressForm";
+import OrderSummary from "../../components/OrderSummary";
 import { useSelector } from 'react-redux';
-import { RootState } from '@/redux/store';
+import { RootState } from '../../redux/store';
 import Link from "next/link";
-import Header2 from "@/components/Header2";
+import Header2 from "../../components/Header2";
 
 const CheckoutPage: React.FC = () => {
   const cartItems = useSelector((state: RootState) => state.cart.items);

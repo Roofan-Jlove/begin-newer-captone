@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { client, urlFor } from "@/utils/sanity"; // Update the path based on your utils folder location
-import Header2 from "@/components/Header2";
+import { client, urlFor } from "../../utils/sanity"; // Update the path based on your utils folder location
+import Header2 from "../../components/Header2";
 
 // Define Food interface
 interface Food {

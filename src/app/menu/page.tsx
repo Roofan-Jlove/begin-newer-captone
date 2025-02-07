@@ -1,9 +1,9 @@
-import Experience from "@/components/Experiance";
-import Header2 from "@/components/Header2";
+import Experience from "../../components/Experiance";
+import Header2 from "../../components/Header2";
 import React from "react";
 import MenuSection from "./MenuSection";
 import DessertSection from "./DesertDrink";
-import PartnersAndClients from "@/components/PartnerClient";
+import PartnersAndClients from "../../components/PartnerClient";
 import Link from "next/link";
 
 const page = () => {

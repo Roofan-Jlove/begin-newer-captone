@@ -1,5 +1,5 @@
 "use client";
-import Header2 from "@/components/Header2";
+import Header2 from "../../components/Header2";
 import Link from "next/link";
 import React, { useState } from "react";
 

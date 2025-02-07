@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { client, Chef, urlFor } from "../../utils/sanity";
-import Header2 from "@/components/Header2";
+import Header2 from "../../components/Header2";
 
 const ChefsPage = () => {
   const [chefs, setChefs] = useState<Chef[]>([]);

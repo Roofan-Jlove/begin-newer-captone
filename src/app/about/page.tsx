@@ -1,14 +1,14 @@
-import Header2 from '@/components/Header2'
-import React from 'react'
-import AboutUs from './AboutUs'
-import Team from './Team'
-import { Link } from 'lucide-react'
+import Header2 from "../../components/Header2";
+import React from "react";
+import AboutUs from "./AboutUs";
+import Team from "./Team";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div>
-         {/* Header */}
-         <Header2 />
+      {/* Header */}
+      <Header2 />
       <div
         className=" bg-cover bg-center h-96 flex flex-col items-center justify-center"
         style={{
@@ -28,10 +28,7 @@ const page = () => {
       <AboutUs />
 
       <Team />
-
-
     </div>
-
-  )
-}
-export default page
+  );
+};
+export default page;

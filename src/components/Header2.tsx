@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "../components/ui/sheet";
 import { FaBars } from "react-icons/fa";
 
 export default function Header2() {
@@ -93,12 +93,12 @@ export default function Header2() {
                 ))}
               </div>
               <div className="mt-6 flex gap-4">
-                {/* <Link
+                <Link
                   href="/signIn"
                   className="text-white hover:text-[#FF9F0D] transition-colors"
                 >
                   <Image src="/homeimg/user.png" alt="user" width={24} height={24} />
-                </Link> */}
+                </Link>
                 <Link
                   href="/cart"
                   className="text-white hover:text-[#FF9F0D] transition-colors"

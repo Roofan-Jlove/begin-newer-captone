@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 interface TeamMemberProps {
   name: string;
@@ -20,15 +21,15 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image }) => (
     <h3 className="mt-4 text-lg font-bold">{name}</h3>
     <p className="text-gray-600">{role}</p>
     <div className="flex justify-center space-x-4 mt-2">
-      <a href="#" className="text-blue-600 hover:text-blue-700">
+      <Link href="#" className="text-blue-600 hover:text-blue-700">
         <FaFacebook />
-      </a>
-      <a href="#" className="text-blue-400 hover:text-blue-500">
+      </Link>
+      <Link href="#" className="text-blue-400 hover:text-blue-500">
         <FaTwitter />
-      </a>
-      <a href="#" className="text-pink-600 hover:text-pink-700">
+      </Link>
+      <Link href="#" className="text-pink-600 hover:text-pink-700">
         <FaInstagram />
-      </a>
+      </Link>
     </div>
   </div>
 );

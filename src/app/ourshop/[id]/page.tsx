@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { client, urlFor } from "@/utils/sanity";
-import AddToCartButton from "@/components/AddToCartButton";
+import { client, urlFor } from "../../../utils/sanity";
+import AddToCartButton from "../../../components/AddToCartButton";
 import Link from "next/link";
-import Header2 from "@/components/Header2";
+import Header2 from "../../../components/Header2";
+
 
 interface Food {
   _id: string;

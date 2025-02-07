@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '@/redux/store';
+import { RootState } from '../../redux/store';
 import { incrementQuantity, decrementQuantity, removeItem } from './CartSlice';
 import CartItem from './CartItem';
-import Header2 from '@/components/Header2';
+import Header2 from '../../components/Header2';
 import Link from 'next/link';
 
 const CartPage: React.FC = () => {

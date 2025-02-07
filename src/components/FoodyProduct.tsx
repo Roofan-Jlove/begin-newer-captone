@@ -58,11 +58,7 @@ export default function FoodyProduct() {
               height={32}
               className="rounded-lg object-cover h-32 w-full"
             />
-            {/* <Image
-              src="/images/food-3.jpg"
-              alt="Food 3"
-              className="rounded-lg object-cover h-32 w-full"
-            /> */}
+           
           </div>
         </div>
       </section>

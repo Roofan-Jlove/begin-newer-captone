@@ -5,7 +5,7 @@ import { client, Chef, urlFor } from "../../../utils/sanity"; // Adjust the impo
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Header2 from "@/components/Header2";
+import Header2 from "../../../components/Header2";
 
 const ChefDetail: React.FC = () => {
   const params = useParams(); // Get params using useParams
@@ -66,8 +66,7 @@ const ChefDetail: React.FC = () => {
             <h1 className="text-3xl font-bold mb-4">{chefData.name}</h1>
             <p>{chefData.position}</p>
             <p className="mb-4">{chefData.bio}</p>
-            {/* <h1 className="text-xl font-bold mb-2">Years of Experiance</h1> */}
-            {/* <p>{chefData.experiance}</p> */}
+           
             <h2 className="text-xl font-bold mb-4">Specialty</h2>
             <p>{chefData.specialty}</p>
             <h1 className="text-xl font-bold mb-4">About Chef</h1>

@@ -32,10 +32,7 @@ const OrderSummary: React.FC<OrderSummaryProps> = ({ cartItems, totalCost }) => 
           <p>Delivery:</p>
           <p>Free</p>
         </div>
-        {/* <div className="flex justify-between mb-2">
-          <p>Discount:</p>
-          <p>25%</p>
-        </div> */}
+        
         <div className="flex justify-between mb-2">
           <p>Tax:10%</p>
           <p>${(totalCost * 0.1).toFixed(2)}</p> {/* Assuming 10% tax */}

@@ -1,7 +1,7 @@
 import React from "react";
 import ProductDetails from "./ProductDetails";
 import SimilarProducts from "./SimilarProducts";
-import Header2 from "@/components/Header2";
+import Header2 from "../../components/Header2";
 import Link from "next/link";
 
 const product = {
