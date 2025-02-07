@@ -61,7 +61,7 @@ const FoodsPage: React.FC = () => {
             <Link href={`/ourshop/${food._id}`}>
               <div>
                 <Image
-                  src={urlFor(food.image).url()}
+                  src={urlFor(food.image.asset._ref).url()}
                   alt={food.name}
                   width={300}
                   height={300}

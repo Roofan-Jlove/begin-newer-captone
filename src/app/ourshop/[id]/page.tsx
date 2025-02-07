@@ -74,7 +74,7 @@ const FoodDetail: React.FC = () => {
       <div className="flex justify-center">
         <div className="mx-auto p-4">
           <Image
-            src={urlFor(foodData.image).url()}
+            src={urlFor(foodData.image.asset._ref).url()}
             alt={foodData.name}
             width={400}
             height={400}
@@ -115,7 +115,7 @@ const FoodDetail: React.FC = () => {
               id: foodData._id,
               name: foodData.name,
               price: foodData.price,
-              image: urlFor(foodData.image).url(), // Pass image URL
+              image: urlFor(foodData.image.asset._ref).url(), // Pass image URL
             }}
           />
         </div>

@@ -48,7 +48,7 @@ const ChefsPage = () => {
             <Link href={`/chefs/${chef._id}`}>
               <div>
                 <Image
-                  src={urlFor(chef.image).url()}
+                  src={urlFor(chef.image.asset._ref).url()}
                   alt={chef.name}
                   width={300}
                   height={300}

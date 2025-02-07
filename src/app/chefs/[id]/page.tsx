@@ -55,7 +55,7 @@ const ChefDetail: React.FC = () => {
         <div className="flex justify-center items-center">
           <div className="mr-10">
             <Image
-              src={urlFor(chefData.image).url()}
+              src={urlFor(chefData.image.asset._ref).url()}
               alt={chefData.name}
               width={400}
               height={400}
