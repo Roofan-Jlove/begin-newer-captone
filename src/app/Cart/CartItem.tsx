@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface CartItemProps {
   id: string;
@@ -15,7 +16,7 @@ const CartItem: React.FC<CartItemProps> = ({ id, name, price, quantity, image, o
   return (
     <div className="flex items-center justify-between p-4 border-b">
       <div className="flex items-center">
-        <img src={image} alt={name} className="w-16 h-16 object-cover mr-4" />
+        <Image src={image} alt={name} className="w-16 h-16 object-cover mr-4" />
         <div>
           <h2 className="text-lg font-bold">{name}</h2>
           <p className="text-gray-600">${price.toFixed(2)}</p>
