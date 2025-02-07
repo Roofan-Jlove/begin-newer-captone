@@ -1,4 +1,7 @@
+import { Import } from "lucide-react";
+import { fromJSON } from "postcss";
 import React from "react";
+import Image from "next/image";
 
 interface ProductCardProps {
   image: string;
@@ -23,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       {/* Left side Grid for the Items */}
       <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
         <div className="relative h-48">
-          <img src={image} alt={name} className="w-full h-full object-cover" />
+          <Image src={image} alt={name} className="w-full h-full object-cover" />
         </div>
         <div className="p-4">
           <h2 className="text-lg font-semibold text-gray-800 truncate">

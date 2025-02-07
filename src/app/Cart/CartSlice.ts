@@ -20,7 +20,7 @@ const loadState = (): CartState => {
       return { items: [], totalCost: 0 };
     }
     return JSON.parse(serializedState);
-  } catch (err) {
+  } catch (error) {
     return { items: [], totalCost: 0 };
   }
 };

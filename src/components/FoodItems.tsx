@@ -152,10 +152,12 @@ export default function Food() {
                   <div className="flex gap-[20px] lg:justify-start justify-center">
                     <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                       <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
-                        <img
+                        <Image
                           src="/homeimg/Hamburger.png"
                           className="w-[50px] h-[50px] object-contain"
                           alt=""
+                          width={24}
+                          height={24}
                         />
                       </div>
                       <h6 className="font-normal text-[18px] text-center lg:text-start">
@@ -164,10 +166,12 @@ export default function Food() {
                     </div>
                     <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                       <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
-                        <img
+                        <Image
                           src="/homeimg/cookie.png"
                           className="w-[50px] h-[50px] object-contain"
                           alt=""
+                          width={24}
+                          height={24}
                         />
                       </div>
                       <h6 className="font-normal text-[18px] text-center lg:text-start">
@@ -176,10 +180,12 @@ export default function Food() {
                     </div>
                     <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                       <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
-                        <img
+                        <Image
                           src="/homeimg/wine.png"
                           className="w-[50px] h-[50px] object-contain"
                           alt=""
+                          width={24}
+                          height={24}
                         />
                       </div>
                       <h6 className="font-normal text-[18px] text-center lg:text-start">

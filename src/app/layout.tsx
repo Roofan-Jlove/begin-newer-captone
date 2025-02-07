@@ -6,12 +6,7 @@ import Footer from "../components/Footer";
 import StoreProvider from "./StoreProvider";
 import { ReactNode } from 'react';
 
-import {
-  ClerkProvider,
-  SignIn,
-  SignedIn,
-  SignedOut,
-} from "@clerk/nextjs";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
